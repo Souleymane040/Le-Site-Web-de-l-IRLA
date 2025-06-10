@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRLA - Site Officiel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white">
+    <!-- En-tête -->
+    <header class="bg-blue-950 shadow-md fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <!-- Logo + Menu + Recherche (ligne principale) -->
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <img src="./images/Logo de l'IRLA.jpg" alt="logo IRLA" class="h-8 w-auto">
+
+                <!-- Menu Desktop (masqué sur mobile) -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="accueil.html" class="text-white hover:text-blue-600 transition">Accueil</a></li>
+                        <li><a href="a propos.html" class="text-white hover:text-blue-600 transition">À propos</a></li>
+                        <li><a href="actualités.html" class="text-white hover:text-blue-600 transition">Actualités</a></li>
+                        <li><a href="Bibliothèque.html" class="text-white hover:text-blue-600 transition">Bibliothèque</a></li>
+                        <li><a href="#Contact" class="text-white hover:text-blue-600 transition">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Barre de recherche (desktop) -->
+                <div class="hidden md:block relative w-64">
+                    <input type="text" placeholder="Rechercher" class="w-full px-4 py-2 border border-black placeholder-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-black hover:text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Bouton menu mobile (checkbox hack) -->
+                <label for="mobile-menu-toggle" class="md:hidden cursor-pointer">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </label>
+            </div>
+
+            <!-- Menu Mobile (toggle via checkbox) -->
+            <input type="checkbox" id="mobile-menu-toggle" class="hidden">
+            <div class="md:hidden hidden mt-4 py-2 border-t" id="mobile-menu">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Accueil</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">À propos</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Actualités</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Bibliothèque</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Contact</a></li>
+                </ul>
+                <!-- Barre de recherche mobile -->
+                <div class="mt-4 relative">
+                    <input type="text" placeholder="Rechercher" class="w-full px-4 py-2 border border-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-black hover:text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <img src="./Images/Bannière En-tête Bleu Dégradé (4).png" alt="Bannière principale" class="pt-20">
+
+
+</section>
+         <h1 class="text-2xl font-serif text-blue-950 text-center mb-2 mt-4 ">Actualités</h1>
+         <p class="text-center text-lg mb-6">Ces Actualités vous mettent à jour surtoutes nos activités et l’impact que nos langues ont sur la
+                                  société .</p>
+        <section class="mb-10 mx-6">
+    <div class="flex flex-row gap-3">
+        <!-- Première Carte -->
+        <div class="w-200 overflow-hidden ml-6 p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm font-bold mb-2 break-words">Concours des écrivains en Langues Nationales</h2>
+            <img src="./Images/Actu-grand prix Urla.png" alt="Actualités grand prix Irla" class="w-80 mb-2">
+            <p class="text-sm">
+                GRAND PRIX IRLA (DRE DIAKA SIDIBE)
+                aux écrivains <br> en LANGUES NATIONALES,
+                𝒂𝒊𝒈𝒖𝒊𝒔𝒆𝒛 𝒗𝒐𝒔 𝒑𝒍𝒖𝒎𝒆𝒔, <br> 𝒓𝒆𝒎𝒑𝒍𝒊𝒔𝒔𝒆𝒛 
+                𝒗𝒐𝒔 𝒆𝒏𝒄𝒓𝒊𝒆𝒓𝒔 𝒆𝒕 𝒗𝒆𝒏𝒆𝒛 𝒑𝒂𝒓𝒕𝒊𝒄𝒊𝒑𝒆𝒓 <br>
+                à 𝒍𝒂 𝒑𝒓𝒆𝒎𝒊è𝒓𝒆 é𝒅𝒊𝒕𝒊𝒐𝒏 𝒅𝒖 𝒄𝒐𝒏𝒄𝒐𝒖𝒓𝒔 
+                𝒍𝒊𝒕𝒕é𝒓𝒂𝒊𝒓𝒆 <br> 𝑫𝑹𝑬. 𝑫𝑰𝑨𝑲𝑨 𝑺𝑰𝑫𝑰𝑩𝑬.
+            </p>
+        </div>
+
+        <!-- Deuxième Carte -->
+        <div class="w-1/3 overflow-hidden p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm font-bold mb-2">Visite du coordinateur du CELHTO-UA à IRLA</h2>
+            <img src="./Images/Actu UA Irla.jpg" alt="Actualités UA Irla" class="w-full mb-2">
+            <p class="text-sm">
+                Visite de l'Union africaine à IRLA
+                par M. Taulbo de soumettre un document du CELHTO.
+            </p>
+        </div>
+
+        <!-- Troisième Carte -->
+        <div class="w-1/3 overflow-hidden p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm font-bold mb-2">Cooperation entre l'IRLA et le CREDEL</h2>
+            <img src="./Images/Cooperation Irla et Credel.jpg" alt="Actualités coopération Irla et Credel" class="w-full mb-2">
+            <p class="text-sm">
+                Partenariat de coopération inter-universitaire
+                entre l'IRLA et le CREDEL, ainsi que sur la 
+                participation d'un directeur général à la
+                cérémonie de lancement de la Semaine de
+                la langue guinéenne.
+            </p>
+        </div>
+
+        <div class="overflow-hidden ml-6 p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm font-bold mb-2 break-words">Coopérationtion entre les orpailleurs guinéens et l'IRLA</h2>
+            <img src="./Images/IRLA - ORPAILLER.jpg" alt="Cooperation Irla - Orpailleurs" class="w-80 mb-2">
+            <p class="text-sm">
+                IRLA collabore avec des orpailleurs pour préserver <br> 
+                et conserver les langues locales, en encourageant la <br>
+                transcription, la conservation de l’environnement, <br>
+                l’intégration sociale, le développement durable et <br>
+                le partage des connaissances.
+            </p>
+        </div>
+    </div>
+    </section>
+
+    </section>
+        <section class="mb-10 mx-6">
+    <div class="flex flex-row gap-3">
+
+        <!-- Première Carte -->
+        <div class="w-1/3 overflow-hidden p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm font-bold mb-2">Mercredi Scientifique du 17 Avril 2024</h2>
+            <img src="./Documents/Irla mercredi scientifique.jpg" alt="Mercredi Scientifique" class="w-full mb-2">
+            <p class="text-sm">
+                L’Institut de recherche Linguistique Appliquée en collaboration avec le Centre Culturel Franco Guinéen a 
+                organisé la troisième édition de mercredi scientifique au sein du CCFG, il y avait comme invité la communauté BAGA.
+            </p>
+        </div>
+
+        <!-- Deuxième Carte -->
+        <div class="w-1/3 overflow-hidden p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm font-bold mb-2">Lancement de la Semaine des Langues Guinéennes</h2>
+            <img src="./Documents/Irla et Master.jpg" alt="Semaine nationale des langues" class="w-full mb-2">
+            <p class="text-sm">
+                l’IRLA soutien les masters Guinée en les invitant à la cérémonie de lancement de la Semaine <br>
+                de langues guinéennes. Cette initiative montre l’importance accordée à la promotion <br>
+                et à la préservation des langues locales en Guinée.
+            </p>
+        </div>
+
+        <!-- Troisième Carte -->
+        <div class="w-1/3 overflow-hidden p-4" style="background-color: #f5f3ef;">
+            <h2 class="text-sm text-center font-bold mb-2">Mercredi Scientifique</h2>
+            <img src="./Documents/Irla mercredi scientifique 2.jpg" alt="Mercredi Scientifique 2" class="w-full mb-2">
+            <p class="text-sm">
+                Institut de Recherche Linguistique Appliquée (IRLA). En partenariat avec le Centre Culturel Franco
+                Guinéen organise son 2ème mercredi Scientifique au CCFG 06 Mars 2024 
+                sous le Thème : L’importance des Langues maternelles dans le développement socio-économique.
+            </p>
+        </div>
+
+    </div>
+    </section>
+
+    <div class="py-8 px-4" style="background-color: #f5f3ef;">
+<div class="container mx-auto max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Horaires -->
+                <div class="text-left md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Horaires d'ouverture</h3>
+                    <p class="text-gray-700">De 8h00 à 16h00</p>
+                    <p class="text-gray-700">Du Lundi au Vendredi</p>
+                </div>
+                
+                <!-- Contact -->
+                <div id="Contact" class="text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Contact</h3>
+                    <p class="text-gray-700">info@irla.gov.gn</p>
+                    <p class="text-gray-700">(+224) 628 627 878</p>
+                </div>
+                
+                <!-- Adresse -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Adresse</h3>
+                    <p class="text-gray-700">Téminètaye,</p>
+                    <p class="text-gray-700">Commune de kaloum,</p>
+                    <p class="text-gray-700">Conakry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-blue-950 text-white py-10">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between items-start">
+        <div class="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
+            <ul class="space-y-4 text-lg"> <li><a href="accueil.html" class="hover:text-cyan-400 font-serif">Accueil</a></li>
+                <li><a href="actualités.html" class="hover:text-cyan-400 font-serif">Actualités</a></li>
+                <li><a href="a propos.html" class="hover:text-cyan-400 font-serif">A propos</a></li>
+                <li><a href="Bibliothèque.html" class="hover:text-cyan-400 font-serif">Bibliothèque</a></li>
+            </ul>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/4 text-center md:text-right">
+            <button class="text-xl font-semibold mb-4 bg-white text-blue-950 w-50 rounded inline-block px-10 py-1">Nous Suivre</button>
+            <div class="flex justify-end mr-10 md:justify-end space-x-4 mt-4">
+                <a href="https://www.facebook.com/IRLADialectes/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/Icone facebook.jpg" alt="Facebook" class="w-10 h-10 rounded-full">
+                </a>
+                <a href="https://www.linkedin.com/company/irla-guinea/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/Icone Linkdn.jpg" alt="LinkedIn" class="w-10 h-10 rounded-full">
+                </a>
+                <a href="https://twitter.com/irla_guinea" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/Icone Twitter.jpg" alt="Twitter" class="w-10 h-10 rounded-full">
+                </a>
+                <a href="https://www.youtube.com/channel/UC_YOUR_CHANNEL_ID" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/icone Youtube.jpg" alt="YouTube" class="w-10 h-10 rounded-full">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRLA - Site Officiel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icônes Font Awesome (optionnel) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- En-tête -->
+    <header class="bg-blue-950 fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <!-- Logo + Menu + Recherche (ligne principale) -->
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <img src="./images/Logo de l'IRLA.jpg" alt="logo IRLA" class="h-8 w-auto">
+
+                <!-- Menu Desktop (masqué sur mobile) -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="accueil.html" class="text-white hover:text-blue-600 transition">Accueil</a></li>
+                        <li><a href="a propos.html" class="text-white hover:text-blue-600 transition">À propos</a></li>
+                        <li><a href="actualités.html" class="text-white hover:text-blue-600 transition">Actualités</a></li>
+                        <li><a href="Bibliothèque.html" class="text-white hover:text-blue-600 transition">Bibliothèque</a></li>
+                        <li><a href="#Contact" class="text-white hover:text-blue-600 transition">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Barre de recherche (desktop) -->
+                <div class="hidden md:block relative w-64">
+                    <input type="text" placeholder="Rechercher" class="w-full px-4 py-2 border border-black placeholder-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-black hover:text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Bouton menu mobile (checkbox hack) -->
+                <label for="mobile-menu-toggle" class="md:hidden cursor-pointer">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </label>
+            </div>
+
+            <!-- Menu Mobile (toggle via checkbox) -->
+            <input type="checkbox" id="mobile-menu-toggle" class="hidden">
+            <div class="md:hidden hidden mt-4 py-2 border-t" id="mobile-menu">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Accueil</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">À propos</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Actualités</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Bibliothèque</a></li>
+                    <li><a href="#" class="block text-black hover:text-blue-600 transition">Contact</a></li>
+                </ul>
+                <!-- Barre de recherche mobile -->
+                <div class="mt-4 relative">
+                    <input type="text" placeholder="Rechercher" class="w-full px-4 py-2 border border-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-black hover:text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <img src="./Images/Bannière En-tête Bleu Dégradé (4).png" alt="Bannière principale" class="pt-20">
+
+    <h1 class="text-2xl mt-6 font-serif mb-3 text-center text-blue-950">Présentation de l'Institution</h1>
+     <p class="mx-10 pb-2">L’Institut de Recherche Linguistique Appliquée (IRLA) est un Etablissement  Public  à caractère 
+        scientifique et technique chargé de sauvegarder et de développer le patrimoine linguistique guinéen, 
+        support privilégié de la culture nationale dans sa diversité. Il est créé  par 
+        l’Ordonnance No304/PRG/SGG/du 12 Décembre 1985. Placé sous la tutelle du Ministère de l’Enseignement Supérieur,
+        de la Recherche Scientifique et de l’Innovation. (M.E.S.R.S.I).
+    </p>
+    
+    <div class="flex flex-cols-3 gap-4 m-5">
+        <div style="background-color: #f5f3ef;" class="p-4">
+            <h2 class="text-center border border-black mb-4 font-extrabold">Historique</h2>
+            <P class="text-sm border border-black p-2">L’Académie des Langues avait, en particulier, pour mission de travailler sur le corpus des langues guinéennes (description phonologique, morphosyntaxique, lexicale…) et de mener des recherches appliquées visant leur enseignement/apprentissage (élaboration de grammaires, de dictionnaires, réflexion sur la méthodologie d’enseignement des langues guinéennes, etc.)
+               Seize (16) ans de pratique La Guinée, dès son accession à l’indépendance, a fait de la promotion des langues nationales un enjeu de politique publique.
+               Dans cette optique, des conditions institutionnelles, juridiques et matérielles ont été créées en vue de promouvoir les langues nationales par l’enseignement formel, l’alphabétisation, les médias, les expressions culturelles et artistiques.
+               écrite des langues nationales dans le cursus scolaire et parascolaire ont prouvé les vertus et la capacité des langues guinéennes à exprimer des abstractions et à véhiculer la science, la technique et la technologie.</P>
+        </div>
+
+        <div style="background-color: #f5f3ef;" class="p-4">
+            <h2 class="text-center border border-black mb-4 font-extrabold">Objectifs</h2>
+            <p class="text-sm border border-black p-2">Les principaux objectifs de l’IRLA sont :
+
+               Concevoir et mettre en place des programmes de recherches adaptés aux besoins nationaux de développement des langues nationales ;
+               Promouvoir la recherche linguistique et sociolin guistique ;
+               Valoriser les résultats de recherche sur les langues nationales ;
+               Devenir un véritable organe de coordination des activités de recherche linguistique nationale, et un     centre d’excellence dans la sous-région ;
+               Promouvoir la coopération et le partenariat avec des institutions nationales et internationales.</p>
+        </div>
+
+        <div style="background-color: #f5f3ef;" class="p-4">
+            <div class=""><h2 class="text-center ml-24 w-48 border border-black mb-4 font-extrabold">Missions</h2></div>
+            <p class="text-sm border border-black p-2">L’IRLA a pour missions de :
+
+               Promouvoir les langues guinéennes dans tous les domaines de la science, de la technique et de la technologie,
+               Mener des études sur les riches traditions linguistiques guinéennes en recueillant les contes, les proverbes, les légendes, les maximes, les dictons etc, pour les analyser, les vulgariser et les archiver ;
+               Entreprendre et coordonner toutes actions de promotion des langues nationales ;
+               Organiser et effectuer toutes actions de recherche linguistique appliquée aux différents domaines de promotion des langues : enseignement, apprentissage, alphabétisation, médias ;
+               Mener des recherches sur l’interférence entre le français et les langues guinéennes pour faciliter l’enseignement du français et celui des langues nationales.
+               Réaliser tous les préalables nécessaires à la relance et à la bonne poursuite de l’enseignement des langues et dans les langues nationales ;</p>
+        </div>
+    </div>
+
+    <section>
+        <h1 class="text-blue-950 text-2xl font-serif mb-4 text-center">Projets et Perspectives</h1>
+    <div>
+        <h2 class="text-xl text-center my-3">Importance d'une politique Linguistique en Guinée</h2>
+        <p class="mx-10 mb-4">La politique linguistique est connue comme étant toute décision d’un Etat permettant de réguler l’usage d’une ou plusieurs langues parlées sur le territoire relevant de sa souveraineté.
+           En effet, plusieurs initiatives ont été entreprises pendant la première République visant à promouvoir et à valoriser les langues guinéennes (1966 à 1984). Parmi ces initiatives on peut citer : l’utilisation des langues à la radio, dans les réunions officielles ; l’introduction des langues nationales dans l’enseignement primaire. Cependant, un souci s’est posé : celui du choix d’une langue. La solution retenue fut le choix de huit (8) langues principales : le pular, le maninkakan, le soso, le kisiei, le kpelewoo, le koniagui, le bassari et le loma.
+           Avec l’avènement de la 2ème République, le français a été réintroduit comme langue d’enseignement au détriment des langues nationales. Depuis cette époque, se pose la question d’une politique linguistique visant à fixer le statut et à valoriser nos langues.
+           L’IRLA se propose de mener des études sur le territoire en vue de cartographier les usages linguistiques et de les proposer à l’agenda politique.
+        </p>
+    </div>
+
+    <div class="flex flex-cols-3 gap-2 mx-6 p-4 mb-4" style="background-color: #f5f3ef;">
+        <div >
+             <h3 class="mb-2 text-sm text-center border border-black">Elaboration de l’Atlas Sociolinguistique :</h3>
+            <p class="mb-3 p-2 text-sm border border-black">La Guinée est, selon les experts, un « damier linguistique ». 
+               Il y a donc un dynamisme linguistique qui mérite d’être investigué en vue d’établir une cartographie exhaustive des langues et des lieux où elles sont parlées.
+               L’IRLA vise, par ce projet, à procéder à un recensement précis des langues et de leurs locuteurs.
+               Il favorisera une meilleure connaissance du patrimoine linguistique de la Guinée.
+            </p>
+        </div>
+        
+        <div class="p-2">
+            <h3 class="mb-2 text-sm text-center border border-black">Institution d'une Semaine Annuelle des Langues Nationales :</h3>
+            <p class="mb-3 p-2 text-sm border border-black">L’usage du français, langue officielle, conduit à la désaffection de nos langues nationales.
+               Comment réenchanter l’apprentissage de ces langues ?
+               Comment susciter l’intérêt du grand public pour nos langues ?
+               Face à ce constat, l’IRLA offre la possibilité de découvrir des méthodes pédagogiques, didactiques et ludiques qu’il développe à travers ses différents experts en kisiei, maninkakan, pular, kp l , soso, loma, onéyan et en wamey.
+               A travers le français et l’anglais comme supports, nos experts, formatrices et formateurs, vous donneront le goût de la découverte et de l’apprentissage des richesses de nos langues.
+           </p>
+        </div>
+
+
+        <div class="p-2">
+            <h3 class="mb-2 text-sm text-center border border-black">Organisation des « AFTERWORK » (Contes et Légendes) :</h3>
+            <p class="mb-3 text-sm border border-black p-2">La transmission des valeurs traditionnelles africaines aux générations montantes se faisait au clair delune,
+               sous les arbres à palabres, par les sages après avoir passé une longue journée de travail à traversdes contes,
+               légendes, proverbes et devinettes. Par ce biais, on organisait un moment ludique et pédagogique où, à travers le jeu et l’émerveillement,
+               des savoirs étaient dispensés.L’IRLA se propose de récréer cette ambiance dans un cadre moderne en faisant intervenir des paroliers,des conteurs et des historiens pour égayer votre soirée d’afterwork.
+            </p>
+        </div>
+     </div>
+    </section>
+
+    <section class="pb-10 pt-6 bg-white">
+        <h1 class="text-2xl font-serif text-blue-950 mb-4 mx-10 text-center">Services</h1>
+
+    <div class="container p-4 h-100 mx-auto px-4" style="background-color: #f5f3ef;">
+               <div class="flex flex-wrap justify-center items-center gap-8 mx-10" style="background-color: #f5f3ef;">
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/Illustration formation.jpg" alt="Icône Formation" class="w-24 h-24 mb-4 mr-10 object-contain">
+                <h3 class="text-lg -ml-10 font-semibold text-gray-800">Formation</h3>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/illustration Traduction.jpg" alt="Icône Traduction" class="w-24 h-24  mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Traduction</h3>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 ml-30 text-center">
+                <img src="./Images/Illustration Recherche.jpg" alt="Icône Recherche" class="w-24 h-23 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Recherche</h3>
+
+            </div>
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/Icone de Sensibilisation.jpg" alt="Icône Sensibilisation" class="w-24 h-24 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Sensibilisation</h3>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/icone de message publicitaire.jpg" alt="Icône message publicitaire" class="w-24 h-24 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Messages publicitaire</h3>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 ml-30 text-center">
+                <img src="./Images/icone de doublage de production.jpg" alt="Icône doublage des productions" class="w-24 h-23 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Doublage des productions</h3>
+
+            </div>
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 ml-30 text-center">
+                <img src="./Images/icone elaboration de manuel.jpg" alt="Icône Elaboration de manuel" class="w-24 h-23 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Elaboration de manuel</h3>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white mb-10">
+    <div class="container px-4">
+        <h1 class="text-2xl font-serif text-blue-950  text-center mb-4">Nos Administateurs</h1>
+        
+        <div class="flex flex-wrap justify-center items-center gap-8 h-72 mx-4" style="background-color: #f5f3ef;">
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/Directeur General Irla.jpg" alt="Le Directeur General" class="w-24 h-24 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Dr Mohamed Bintou KEITA</h3>
+                <p>Directeur Général</p>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/Directrice General adjointe Irla.jpg" alt="Directrice Général Adjointe" class="w-24 h-32 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Dre Saran CAMARA</h3>
+                <p>Directrice Général Adjointe</p>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 ml-30 text-center">
+                <img src="./Images/Comptable Irla.jpeg" alt="Le Comptable" class="w-24 h-28 mb-4 object-contain">
+                <h3 class="text-md font-semibold text-gray-800"> M. Abdourahamane FOFANA</h3>
+                <p>Comptable</p>
+
+            </div>
+            <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md w-60 text-center">
+                <img src="./Images/Secretaire des affaires financière Irla.jpg" alt="Secretaire des affaires financières" class="w-24 h-28 mb-4 object-contain">
+                <h3 class="text-lg font-semibold text-gray-800">Mme. Fatou BAH</h3>
+                <p>Secretaire des affaires financières</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="py-8 px-4" style="background-color: #f5f3ef;">
+<div class="container mx-auto max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Horaires -->
+                <div class="text-left md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Horaires d'ouverture</h3>
+                    <p class="text-gray-700">De 8h00 à 16h00</p>
+                    <p class="text-gray-700">Du Lundi au Vendredi</p>
+                </div>
+                
+                <!-- Contact -->
+                <div id="Contact" class="text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Contact</h3>
+                    <p class="text-gray-700">info@irla.gov.gn</p>
+                    <p class="text-gray-700">(+224) 628 627 878</p>
+                </div>
+                
+                <!-- Adresse -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Adresse</h3>
+                    <p class="text-gray-700">Téminètaye,</p>
+                    <p class="text-gray-700">Commune de kaloum,</p>
+                    <p class="text-gray-700">Conakry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-blue-950 text-white py-10">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between items-start">
+        <div class="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
+            <ul class="space-y-4 text-lg"> <li><a href="accueil.html" class="hover:text-cyan-400 font-serif">Accueil</a></li>
+                <li><a href="actualités.html" class="hover:text-cyan-400 font-serif">Actualités</a></li>
+                <li><a href="a propos.html" class="hover:text-cyan-400 font-serif">A propos</a></li>
+                <li><a href="Bibliothèque.html" class="hover:text-cyan-400 font-serif">Bibliothèque</a></li>
+            </ul>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/4 text-center md:text-right">
+            <button class="text-xl font-semibold mb-4 bg-white text-blue-950 w-50 rounded inline-block px-10 py-1">Nous Suivre</button>
+            <div class="flex justify-end mr-10 md:justify-end space-x-4 mt-4">
+                <a href="https://www.facebook.com/IRLADialectes/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/Icone facebook.jpg" alt="Facebook" class="w-10 h-10 rounded-full">
+                </a>
+                <a href="https://www.linkedin.com/company/irla-guinea/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/Icone Linkdn.jpg" alt="LinkedIn" class="w-10 h-10 rounded-full">
+                </a>
+                <a href="https://twitter.com/irla_guinea" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/Icone Twitter.jpg" alt="Twitter" class="w-10 h-10 rounded-full">
+                </a>
+                <a href="https://www.youtube.com/channel/UC_YOUR_CHANNEL_ID" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400">
+                    <img src="./Images/icone Youtube.jpg" alt="YouTube" class="w-10 h-10 rounded-full">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
